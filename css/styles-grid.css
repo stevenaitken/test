@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;  
+    background-color: #f4f4f4;
+}
+
+.container {
+
+    display: grid; /* present content in a grid format */
+
+    grid-template-columns: 1fr 1fr; /* create a 2 column grid */
+
+    max-width: 80%;   /* set the width of the container element */        
+
+    background: #ffffff; /* set a background colour - optional or change the value */
+
+    margin: 0 auto; /* centres the content on the web page */
+    margin-top: 3%;
+
+}
+
+.column {
+
+    padding: 20px; /* adds padding to each column - optional or change the value */
+
+}
+
+
+
+/* while the browser is no wider than 600px then change the column lyout from 2 to 1 column and set te width of the container to 100% rather than 80% */
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
